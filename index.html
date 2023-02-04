@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My CV</title>
+  <title>Boussehal Abdelaziz CV</title>
   <style>
     /* Add your CSS styles here */
     body {
@@ -74,8 +74,29 @@
     th {
       background-color: #ddd;
     }
+    .download-cv-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
 
+.download-cv {
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.fa-download {
+  font-size: 20px;
+  margin-right: 10px;
+}
   </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
@@ -172,8 +193,11 @@
       </table>
     </section>
 
-    <a class="download-cv" href="FrenchCv.pdf" download>Download CV (PDF)</a>
-  </div>
+    <div class="download-cv-container">
+      <a class="download-cv" href="FrenchCv.pdf" download>
+        <i class="fa fa-download"></i> Download CV (PDF)
+      </a>
+    </div>
 
   <!-- Add any JavaScript code here -->
 </body>
